@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:id="@+id/btnCreateTicket"
+        android:textColor="#FFF"
+        style="@style/loginButton"
+        android:layout_centerInParent="true"
+        android:text="Create A Ticket"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:padding="6dp"
+        android:onClick="onBtnCreateTokenClick"
+        />
+    <Button
+        android:id="@+id/btnTicketList"
+        android:layout_below="@+id/btnCreateTicket"
+        style="@style/loginButton"
+        android:textColor="#FFF"
+        android:layout_centerInParent="true"
+        android:text="Ticket List"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:onClick="onBtnTicketListClick"
+        />
+    <Button
+        android:id="@+id/btnUserList"
+        android:layout_below="@+id/btnTicketList"
+        style="@style/loginButton"
+        android:textColor="#FFF"
+        android:layout_centerInParent="true"
+        android:text="Ticket List"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:onClick="onBtnUserListClick"
+        />
+    <Button
+        android:id="@+id/btnMyTickets"
+        android:layout_below="@+id/btnUserList"
+        style="@style/loginButton"
+        android:textColor="#FFF"
+        android:layout_centerInParent="true"
+        android:text="My Tickets"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:onClick="onBtnMyTicketListClick"
+        />
+
+</RelativeLayout>

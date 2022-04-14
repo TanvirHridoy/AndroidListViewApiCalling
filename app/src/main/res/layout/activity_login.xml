@@ -79,7 +79,6 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/loginViewsMargin"
                 android:padding="6dp"
-                android:onClick="onLoginClick"
                 />
 
             <TextView

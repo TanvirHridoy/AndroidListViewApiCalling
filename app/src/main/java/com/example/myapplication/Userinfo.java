@@ -1,13 +1,38 @@
 package com.example.myapplication;
 
+import com.google.gson.Gson;
+
 public class Userinfo {
     private String rescode;
     private String loginid;
     private String paword;
     private String rmrks;
     private String imageurl;
+
+    public boolean isIsactive() {
+        return isactive;
+    }
+
     private boolean isactive;
+
+    public String getInitJinfo() {
+        return initJinfo;
+    }
+
     private String initJinfo;
+
+    public InitJinfo getUserdata() {
+        return userdata;
+    }
+
+    public void setUserdata(String userdata) {
+       Gson g= new Gson();
+        this.userdata =g.fromJson(userdata,InitJinfo.class);
+    }
+
+    private InitJinfo userdata;
+    public static Userinfo User = new Userinfo();
+
 
 
     // Getter Methods
@@ -36,9 +61,7 @@ public class Userinfo {
         return isactive;
     }
 
-    public String getInitJinfo() {
-        return initJinfo;
-    }
+
 
     // Setter Methods
 
@@ -66,7 +89,7 @@ public class Userinfo {
         this.isactive = isactive;
     }
 
-    public void setInitJinfo( String initJinfo ) {
-        this.initJinfo = initJinfo;
-    }
+  public void setInitJinfo( String initJinfo ) {
+       this.initJinfo = initJinfo;
+   }
 }
