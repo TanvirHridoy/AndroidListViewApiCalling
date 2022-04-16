@@ -29,18 +29,18 @@
         android:padding="10dp"
         android:onClick="onBtnTicketListClick"
         />
+
     <Button
         android:id="@+id/btnUserList"
-        android:layout_below="@+id/btnTicketList"
         style="@style/loginButton"
-        android:textColor="#FFF"
+        android:layout_below="@+id/btnTicketList"
         android:layout_centerInParent="true"
-        android:text="Ticket List"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:padding="10dp"
         android:onClick="onBtnUserListClick"
-        />
+        android:padding="10dp"
+        android:text="My Ticket List"
+        android:textColor="#FFF" />
     <Button
         android:id="@+id/btnMyTickets"
         android:layout_below="@+id/btnUserList"

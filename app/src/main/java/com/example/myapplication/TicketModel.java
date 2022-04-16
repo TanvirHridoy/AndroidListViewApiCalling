@@ -1,6 +1,12 @@
 package com.example.myapplication;
 
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class TicketModel {
@@ -143,8 +149,12 @@ public class TicketModel {
             return ticketid;
         }
 
+        @RequiresApi(api = Build.VERSION_CODES.O)
         public String getBegintime() {
-            return begintime;
+
+            LocalDateTime dateTime = LocalDateTime.parse(this.begintime);
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMM-yyyy hh:mm a");
+            return dateTime.format(formatter);
         }
 
         public String getPrjitmcode() {

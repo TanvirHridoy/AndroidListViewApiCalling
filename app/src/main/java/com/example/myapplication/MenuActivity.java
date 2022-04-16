@@ -22,7 +22,7 @@ public class MenuActivity extends AppCompatActivity {
         TicketList= findViewById(R.id.btnTicketList);
         MyTicketList=findViewById(R.id.btnMyTickets);
         UserList=findViewById(R.id.btnUserList);
-
+        setTitle("Main Menu");
         if(AppConst.getUser()!=null){
             if(AppConst.getUser().getRescode().startsWith("95010020") || AppConst.getUser().getRescode().startsWith("95010010")){
                 activateAdminMode();
@@ -52,7 +52,7 @@ public class MenuActivity extends AppCompatActivity {
 
         Intent switchActivityIntent = new Intent(this, MainActivity.class);
         startActivity(switchActivityIntent);
-        overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
+       // overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
 
     }
     public void onBtnUserListClick(View View){

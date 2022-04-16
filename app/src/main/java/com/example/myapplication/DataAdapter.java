@@ -2,6 +2,8 @@ package com.example.myapplication;
 
 import android.content.Context;
 import android.net.Uri;
+import android.os.Build;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +13,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 
 import com.squareup.picasso.Picasso;
 
@@ -25,6 +28,7 @@ public class DataAdapter extends ArrayAdapter<TicketModel.Ticket> {
         this.mResources=resource;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -36,9 +40,11 @@ public class DataAdapter extends ArrayAdapter<TicketModel.Ticket> {
 //        Picasso.get().load(getItem(position).getAvatar()).into(imageView);
         //imageView.setImageURI(Uri.parse(getItem(position).getAvatar()) );
         TextView txtTicketID = convertView.findViewById(R.id.ticketId);
-        txtTicketID.setText(getItem(position).getTicketid());
+        TextView txtIssuedate = convertView.findViewById(R.id.issuedate);
+        txtTicketID.setText("ID# "+getItem(position).getTicketid());
+        txtIssuedate.setText("Issued On: "+getItem(position).getBegintime());
         TextView txtTicketDes = convertView.findViewById(R.id.ticketDes);
-        txtTicketDes.setText(getItem(position).getTicketdes());
+        txtTicketDes.setText("Page: "+getItem(position).getPage());
 
         return convertView;
     }
