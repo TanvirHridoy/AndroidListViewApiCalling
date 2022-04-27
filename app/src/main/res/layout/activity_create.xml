@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateActivity"
+    android:padding="10dp"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblModule"
+            android:text="Module"
+            android:textSize="35dp"
+            android:layout_centerHorizontal="true"
+            android:textFontWeight="200"></TextView>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Module"
+        android:gravity="center"
+        android:layout_below="@+id/lblModule"
+        />
+        <TextView
+            android:layout_below="@+id/Module"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblPage"
+            android:text="Issue Page"
+            android:layout_centerHorizontal="true"
+            android:textSize="35dp"
+            android:textFontWeight="200"></TextView>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/Page"
+            android:gravity="center"
+            android:layout_below="@+id/lblPage"
+            ></Spinner>
+
+    <TextView
+        android:layout_below="@+id/Page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblCatagory"
+        android:text="Support Category"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"
+        android:textFontWeight="200"></TextView>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/Catagory"
+        android:gravity="center"
+        android:layout_below="@+id/lblCatagory"
+        ></Spinner>
+
+    <TextView
+        android:layout_below="@+id/Catagory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblType"
+        android:text="Type"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"
+        android:textFontWeight="200"></TextView>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/Type"
+        android:gravity="center"
+        android:layout_below="@+id/lblType"
+        ></Spinner>
+
+    <TextView
+        android:id="@+id/lblPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Type"
+        android:layout_centerHorizontal="true"
+        android:text="Priority"
+        android:textFontWeight="200"
+        android:textSize="35dp"></TextView>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/Priority"
+        android:gravity="center"
+        android:layout_below="@+id/lblPriority"
+        ></Spinner>
+
+    <TextView
+        android:id="@+id/lblEDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Priority"
+        android:layout_centerHorizontal="true"
+        android:text="ExpectedDate"
+        android:textFontWeight="200"
+        android:textSize="35dp"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/EDate"
+        android:hint="Tap Here"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:layout_below="@id/lblEDate"
+        android:background="@drawable/rounded_edittext"
+        ></EditText>
+
+
+    <TextView
+        android:id="@+id/lblDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EDate"
+        android:layout_centerHorizontal="true"
+        android:text="Ticket Description"
+        android:textFontWeight="200"
+        android:textSize="35dp"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/TDesc"
+        android:hint="Type Here"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:layout_below="@id/lblDesc"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="text|textMultiLine"
+        ></EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TDesc"
+        android:text="Submit"
+        android:id="@+id/btnSubmit"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        ></Button>
+
+</RelativeLayout>
+</ScrollView>

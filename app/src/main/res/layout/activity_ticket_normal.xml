@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketNormalActivity"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblIssuedBy"
+        android:text="Issued By:"
+        android:textSize="20dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/black"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/IssuedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lblIssuedBy"
+        android:text="Kamel morshed hridoy (hridoy@asit.com.bd), Software Engineer-ASIT"></TextView>
+
+    <TextView
+        android:id="@+id/lblIDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblIssuedBy"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="Issue Date:"
+        android:textColor="@color/black"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/IssueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IssuedBy"
+        android:layout_toRightOf="@+id/lblIDate"
+        android:text="4/22/2022 2:28:48 AM"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblIDate"
+        android:id="@+id/lblPModule"
+        android:text="Module:"
+        android:textSize="20dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/black"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/PModule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IssueDate"
+        android:layout_toRightOf="@+id/lblPModule"
+        android:paddingTop="10dp"
+        android:text="ACCOUNTS MODULE"></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPModule"
+        android:id="@+id/lblPPage"
+        android:text="Page:"
+        android:textSize="20dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/black"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/PPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PModule"
+        android:layout_toRightOf="@+id/lblPPage"
+        android:paddingTop="10dp"
+        android:text="CONFIGURATION-COMMON CONFIG-VOUCHER TYPE"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPPage"
+        android:id="@+id/lblPDesc"
+        android:text="Description"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="5dp"
+        android:textColor="@color/black"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/PDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPDesc"
+        android:enabled="false"
+        android:paddingTop="10dp"
+
+        android:text="hellow"></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PDesc"
+        android:id="@+id/lblPStatus"
+        android:text="Status:"
+        android:textSize="20dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/black"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PStatus"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/PDesc"
+        android:layout_toRightOf="@+id/lblPStatus"
+        android:text="Pending"></TextView>
+
+    <TextView
+        android:id="@+id/lblPPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PDesc"
+        android:layout_toRightOf="@+id/PStatus"
+        android:paddingRight="5dp"
+        android:paddingLeft="50dp"
+        android:text="Priority:"
+        android:textColor="@color/black"
+        android:textSize="20dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PPriority"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/PDesc"
+        android:layout_toRightOf="@+id/lblPPriority"
+        android:text="Critical"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPPriority"
+        android:id="@+id/lblSDesc"
+        android:text="Status Description"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="5dp"
+        android:textColor="@color/black"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/SDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblSDesc"
+        android:enabled="false"
+        android:paddingTop="10dp"
+        android:text="hellowhellowhellowhellowhellowhellowhellowhellow"></EditText>
+    <ImageView
+        android:id="@+id/PImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SDesc"></ImageView>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/lblPModule"-->
+<!--        android:id="@+id/lblPPage"-->
+<!--        android:text="Page:"-->
+<!--        android:textSize="20dp"-->
+<!--        android:paddingRight="5dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        ></TextView>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/PPage"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:layout_below="@+id/PModule"-->
+<!--        android:layout_toRightOf="@+id/lblPPage"-->
+<!--        android:text="CONFIGURATION-COMMON CONFIG-VOUCHER TYPE"></TextView>-->
+
+
+
+
+</RelativeLayout>
+</ScrollView>

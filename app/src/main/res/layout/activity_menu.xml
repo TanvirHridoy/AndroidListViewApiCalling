@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="110dp"
+        android:elevation="10dp"
+        android:id="@+id/photocard2">
+
+        <ImageView
+            android:id="@+id/LoggedUserPhoto"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            ></ImageView>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/btnCreateTicket"
+        style="@style/loginButton"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:onClick="onBtnCreateTokenClick"
+        android:padding="6dp"
+        android:text="Create A Ticket"
+        android:textColor="#FFF" />
+    <Button
+        android:id="@+id/btnTicketList"
+        android:layout_below="@+id/btnCreateTicket"
+        style="@style/loginButton"
+        android:textColor="#FFF"
+        android:layout_centerInParent="true"
+        android:text="Ticket List"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:onClick="onBtnTicketListClick"
+        />
+
+    <Button
+        android:id="@+id/btnUserList"
+        style="@style/loginButton"
+        android:layout_below="@+id/btnTicketList"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="onBtnUserListClick"
+        android:padding="10dp"
+        android:text="User List"
+        android:textColor="#FFF" />
+    <Button
+        android:id="@+id/btnMyTickets"
+        android:layout_below="@+id/btnUserList"
+        style="@style/loginButton"
+        android:textColor="#FFF"
+        android:layout_centerInParent="true"
+        android:text="My Tickets"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:onClick="onBtnMyTicketListClick"
+        />
+        <Button
+            android:id="@+id/btnLogOut"
+            android:layout_below="@+id/btnMyTickets"
+            style="@style/loginButton"
+            android:textColor="#FFF"
+            android:layout_centerInParent="true"
+            android:text="Logout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:onClick="onBtnLogoutClick"
+            />
+
+</RelativeLayout>

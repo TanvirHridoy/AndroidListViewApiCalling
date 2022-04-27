@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".UserInfoActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="100dp"
+        android:elevation="10dp"
+        android:id="@+id/photocard">
+
+        <ImageView
+            android:id="@+id/UserPhoto"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            ></ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_below="@+id/photocard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ApplicationLbl"
+        style="@android:style/TextAppearance.Material.Large"
+        android:text="Application"
+        android:gravity="center"
+        android:textSize="25sp"
+        ></TextView>
+    <TextView
+        android:layout_below="@+id/ApplicationLbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Application"
+        android:gravity="center"
+        ></TextView>
+    <TextView
+        android:layout_below="@+id/Application"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LogInIDLbl"
+        style="@android:style/TextAppearance.Material.Large"
+        android:text="Login ID"
+        android:gravity="center"
+        android:textSize="25sp"
+        ></TextView>
+    <TextView
+        android:layout_below="@+id/LogInIDLbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LogInID"
+        android:gravity="center"
+        ></TextView>
+
+    <TextView
+        android:layout_below="@+id/LogInID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FullNameLbl"
+        style="@android:style/TextAppearance.Material.Large"
+        android:text="Full Name"
+        android:gravity="center"
+        android:textSize="25sp"
+        ></TextView>
+    <TextView
+        android:layout_below="@+id/FullNameLbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FullName"
+        android:gravity="center"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/EmailLbl"
+        style="@android:style/TextAppearance.Material.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FullName"
+        android:gravity="center"
+        android:text="Email Address"
+        android:textSize="25sp"></TextView>
+    <TextView
+        android:layout_below="@+id/EmailLbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Email"
+        android:gravity="center"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/PhoneLbl"
+        style="@android:style/TextAppearance.Material.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Email"
+        android:gravity="center"
+        android:text="Phone No"
+        android:textSize="25sp"></TextView>
+    <TextView
+        android:layout_below="@+id/PhoneLbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Phone"
+        android:gravity="center"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/DesignationLbl"
+        style="@android:style/TextAppearance.Material.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Phone"
+        android:gravity="center"
+        android:text="Designation"
+        android:textSize="25sp"></TextView>
+    <TextView
+        android:layout_below="@+id/DesignationLbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Designation"
+        android:gravity="center"
+        ></TextView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+    android:layout_below="@+id/Designation"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RlayoutBtn"
+        >
+        <Button
+            android:id="@+id/btnDeactivate"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#ffbb33"
+            android:layout_marginLeft="40dp"
+            android:text="Deactivate"></Button>
+        <Button
+            android:id="@+id/btnActivate"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#00C851"
+            android:layout_marginLeft="40dp"
+            android:text="Activate"></Button>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#ff4444"
+        android:layout_toRightOf="@+id/RlayoutBtn"
+        android:text="Delete"></Button>
+</RelativeLayout>
+
+
+
+</RelativeLayout>
+</ScrollView>
